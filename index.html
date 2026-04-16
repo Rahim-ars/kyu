@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYU Register · Privacy Policy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f6f8fa;
+            --text-primary: #24292f;
+            --text-secondary: #57606a;
+            --border-color: #d0d7de;
+            --link-color: #0969da;
+            --link-hover: #1f6feb;
+            --code-bg: #f6f8fa;
+            --card-shadow: 0 1px 0 rgba(27, 31, 36, 0.04);
+            --footer-border: #d0d7de;
+            --highlight-bg: #f6f8fa;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-primary: #0d1117;
+                --bg-secondary: #161b22;
+                --text-primary: #c9d1d9;
+                --text-secondary: #8b949e;
+                --border-color: #30363d;
+                --link-color: #58a6ff;
+                --link-hover: #79c0ff;
+                --code-bg: #161b22;
+                --card-shadow: 0 1px 0 rgba(255, 255, 255, 0.05);
+                --footer-border: #30363d;
+                --highlight-bg: #1f2937;
+            }
+        }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: var(--bg-secondary);
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--bg-primary);
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: var(--card-shadow);
+            border: 1px solid var(--border-color);
+        }
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 1rem;
+        }
+        .last-updated {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 2rem 0 1rem 0;
+            color: var(--text-primary);
+        }
+        p {
+            margin-bottom: 1rem;
+        }
+        ul {
+            margin: 0.5rem 0 1.5rem 1.8rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: var(--link-hover);
+        }
+        .highlight {
+            background: var(--highlight-bg);
+            border-left: 4px solid #2563eb;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+        .contact {
+            background: var(--bg-secondary);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-top: 2rem;
+            text-align: center;
+            border: 1px solid var(--border-color);
+        }
+        .footer {
+            margin-top: 2.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--footer-border);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        .footer-links {
+            display: flex;
+            gap: 24px;
+        }
+        .footer-links a {
+            color: var(--text-secondary);
+            border-bottom: none;
+        }
+        .footer-links a:hover {
+            color: var(--link-color);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 1.5rem; }
+            h1 { font-size: 1.8rem; }
+            .footer { flex-direction: column; gap: 1rem; }
+            .footer-links { flex-wrap: wrap; gap: 16px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>KYU Register Privacy Policy</h1>
+        <div class="last-updated">
+            <strong>Kyambogo University</strong> · Last updated: April 16, 2026
+        </div>
+
+        <p>KYU Register ("the App") is the official attendance management application for <strong>Kyambogo University</strong>. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use the App.</p>
+
+        <h2>1. Information We Collect</h2>
+        <ul>
+            <li><strong>Student Information:</strong> Full name, registration number, course, year of study, and university email address (@std.kyu.ac.ug).</li>
+            <li><strong>Location Data:</strong> Precise GPS coordinates collected <strong>only at the moment you tap "Register"</strong> for a lecture.</li>
+            <li><strong>Device Identifier:</strong> A unique device ID (Android ID) used solely to detect proxy attendance (multiple students using the same device).</li>
+            <li><strong>Attendance Records:</strong> Timestamp, course unit, lecturer, and location verification status for each registration.</li>
+            <li><strong>Downloaded PDFs:</strong> Coordinators may generate attendance reports; these are stored locally on the coordinator's device and not uploaded to our servers.</li>
+        </ul>
+
+        <h2>2. How We Use Your Information</h2>
+        <ul>
+            <li>Verify your identity and authenticate you via your university email.</li>
+            <li>Record your attendance in lectures and maintain accurate academic logs.</li>
+            <li>Detect and flag suspicious registration patterns (e.g., location anomalies or shared devices) to uphold academic integrity.</li>
+            <li>Display your personalized timetable and attendance history.</li>
+            <li>Send important notifications related to attendance verification or university announcements (via Firebase Cloud Messaging).</li>
+        </ul>
+        <p><strong>We never sell, rent, or trade your personal information to third parties.</strong></p>
+
+        <div class="highlight">
+            <strong>📍 Location & Device ID</strong><br>
+            Your location is used only to confirm physical presence at the lecture venue (or within 30m of the coordinator). The device ID is stored securely and is never shown publicly—it only helps flag potential attendance fraud.
+        </div>
+
+        <h2>2. Data Storage and Security</h2>
+        <p>All data is stored on <strong>Google Firebase</strong> (Firestore, Authentication) with encryption in transit and at rest. Attendance records are accessible only to you and authorized university staff (lecturers/coordinators).</p>
+
+        <h2>3. Third‑Party Services</h2>
+        <p>The App relies on the following services:</p>
+        <ul>
+            <li><strong>Google Firebase</strong> – Authentication, database, cloud messaging</li>
+            <li><strong>OpenStreetMap</strong> – Map tiles for location display</li>
+        </ul>
+        <p>We encourage you to review their privacy policies: <a href="https://policies.google.com/privacy" target="_blank">Google Privacy</a> and <a href="https://osmfoundation.org/wiki/Privacy_Policy" target="_blank">OpenStreetMap Privacy</a>.</p>
+
+        <h2>4. Data Sharing</h2>
+        <p>We share your attendance data only with Kyambogo University officials (lecturers and coordinators) for the purpose of managing your academic record. We may disclose information if required by law or valid legal request.</p>
+
+        <h2>5. Your Rights</h2>
+        <ul>
+            <li>View and update your profile within the App.</li>
+            <li>Revoke location permission via your device settings (note: this prevents attendance registration).</li>
+            <li>Request account deletion by contacting the Kyambogo University IT department.</li>
+        </ul>
+
+        <h2>6. Children's Privacy</h2>
+        <p>KYU Register is intended for university students and staff. We do not knowingly collect data from children under 13. See our <a href="child-safety.html">Child Safety Standards</a> for more information.</p>
+
+        <h2>7. Changes to This Policy</h2>
+        <p>We may update this policy. Changes will be posted on this page and, where feasible, notified in‑app.</p>
+
+        <div class="contact">
+            <strong>📧 Contact</strong><br>
+            For privacy questions or data requests:<br>
+            <a href="mailto:2400800019@std.kyu.ac.ug">2400800019@std.kyu.ac.ug</a><br>
+            Alinda Rahim · Department of Electrical Engineering · Kyambogo University
+        </div>
+
+        <div class="footer">
+            <div>© 2026 KYU Register · Kyambogo University</div>
+            <div class="footer-links">
+                <a href="child-safety.html">Child Safety</a>
+                <a href="index.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
